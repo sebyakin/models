@@ -8,22 +8,66 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.wrapper>* {
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    flex: 1;
+    padding: 1vw;
+}
+
+.header-links {
+    flex: 1;
 }
 
 
+.logo > a > img {
+    width: 10vw;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    mix-blend-mode: exclusion;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+    
 .name {
     position: absolute;
     z-index: 1;
 }
 
-.block-container {
+.person {
     height: 100vh;
     display: flex;
     flex-direction: row;
-}
+    position: relative;
+} 
+
+@media only screen and (max-width: 600px) {
+    .person {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    } 
+  }
 
 .photo {
     flex: 1;
@@ -48,4 +92,16 @@ model-viewer {
     --progress-bar-color: #000000;
     --progress-bar-height: 2px;
     background-color: unset;
+}
+
+.caption {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    flex-direction: row;
+    align-items: flex-end;    
+    padding-left: 2vw;
+    padding-bottom: 2vw;
 }

@@ -10,40 +10,66 @@
     <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Heroes + Areola models</title>
 </head>
 <body>
     <div class="wrapper">
-        <!-- <header class='header'>
+        <header>
+            <div class="header-links"></div>
             <div class="logo">
-                
+                <a href="http://areolamodels.com" target="_blank"><img src="./assets/am_logo.svg" alt=""></a>
             </div>
-            <div class="link">
-                
-            </div>
-        </header> -->
-            <!-- <div class="block">
-                <div class="name">
-                    <p>
-                        Model name
-                    </p>
-                </div> -->
-                <div class="block-container">
-                    <div class="photo">
+            <div class="header-links"></div>
+        </header>
 
-                    </div>
-                    <div class="model">
-                        <model-viewer src="man-4.glb"
-                        poster="assets/poster.png"
-                        autoplay
-                        camera-controls          
-                        exposure="1"
-                        camera-orbit="90deg 90deg 650m"
-                        </model-viewer>
-                    </div>
+        <!-- skybox-image="studio-1.hdr"  -->
+
+        <section class="person">
+            <div class="caption">
+                <div class="model-info">
+                    <p>ARTEM / 185</p>
+                    <a href="http://areolamodels.com/15-artem-185/">model</a>
                 </div>
+            </div>
+            <div class="photo">
+            </div>
+            <div class="model">
+                <model-viewer src="man-6.glb"
+                poster="assets/poster.png"
+                autoplay
+                camera-controls          
+                exposure="1"
+                camera-orbit="90deg 90deg 650m"
+                </model-viewer>
+            </div>
+        </section>
+
+        <section class="person">
+            <div class="caption">
+                <div class="model-info">
+                    <p>ARTEM / 185</p>
+                    <a href="http://areolamodels.com/15-artem-185/">model</a>
+                </div>
+            </div>
+            <div class="photo">
+            </div>
+            <div class="model">
+                <model-viewer src="man-4.glb"
+                poster="assets/poster.png"
+                autoplay
+                camera-controls          
+                exposure="1"
+                camera-orbit="90deg 90deg 650m"
+                </model-viewer>
+            </div>
+
+
             </div>    
+
+           
+
             <!-- environment-image="studio.hdr" -->
+            <!-- skybox-image="studio.hdr" -->
         
     </div>
     <script src="app.js"></script>
