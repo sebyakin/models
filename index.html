@@ -9,67 +9,84 @@
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
     <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
+    ">
+    <link rel="stylesheet" href="./font/inter.css">
     <link rel="stylesheet" href="style.css">
     <title>Heroes + Areola models</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="header-links"></div>
-            <div class="logo">
-                <a href="http://areolamodels.com" target="_blank"><img src="./assets/am_logo.svg" alt=""></a>
-            </div>
-            <div class="header-links"></div>
+            <div><h2>AREOLA MODELS</h2></div>
+            <div><svg width="24" height="24" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.35355" y1="0.646447" x2="27.3536" y2="26.6464" stroke="black"/>
+                <line y1="-0.5" x2="36.7696" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 27 1)" stroke="black"/>
+                </svg>
+                </div>
+            <div><h2>HEROES</h2></div>
         </header>
 
-        <section class="person">
-            <!-- <div class="caption">
-                <div class="model-info">
-                    <p>ARTEM / 185</p>
-                    <a href="http://areolamodels.com/15-artem-185/">model</a>
-                </div> -->
-            <!-- </div> -->
-            <div class="photo">
+        <section class="person artem">
+            <div class="title">
+                <div class="a-c-1">
+                    <p>
+                        <a href="http://areolamodels.com/15-artem-185/" target="_blank" class="a-c-1">ARTEM </a>/ 185
+                    </p>
+                </div>
+                <div class="a-c-2">
+                    <p>
+                        <a href="http://areolamodels.com/15-artem-185/" target="_blank" class="a-c-2">ARTEM </a>/ 26.23 Mb 
+                    </p>
+                    </div>
             </div>
+            <div class="photo"></div>
             <div class="model">
-                <model-viewer src="man-6.glb"
-                skybox-image="studio-1.hdr"
-                poster="assets/poster.png"
+                <model-viewer src="./assets/models/artem.glb"
+                environment-image="./assets/models/studio.hdr"
+                poster="./assets/poster.png"
                 autoplay
                 camera-controls          
                 exposure="1"
                 camera-orbit="90deg 90deg 650m"
+                loading="lazy"
                 </model-viewer>
             </div>
         </section>
 
-        <section class="person">
-            <!-- <div class="caption">
-                <div class="model-info">
-                    <p>ARTEM / 185</p>
-                    <a href="http://areolamodels.com/15-artem-185/">model</a>
-                </div> -->
-            <!-- </div> -->
-            <div class="photo">
+        <section class="person artem">
+            <div class="title">
+                <div class="a-c-1">
+                    <p>
+                        <a href="http://areolamodels.com/15-artem-185/" target="_blank" class="a-c-1">ALINA </a>/ 163, 85-62-84
+                    </p>
+                </div>
+                <div class="a-c-2">
+                    <p>
+                        <a href="http://areolamodels.com/15-artem-185/" target="_blank" class="a-c-2">ALINA </a>/ 26.23 Mb 
+                    </p>
+                    </div>
             </div>
+            <div class="photo"></div>
             <div class="model">
-                <model-viewer src="man-4.glb"
-                poster="assets/poster.png"
+                <model-viewer src="./assets/models/artem.glb"
+                environment-image="./assets/models/studio.hdr"
+                poster="./assets/poster.png"
                 autoplay
                 camera-controls          
                 exposure="1"
                 camera-orbit="90deg 90deg 650m"
+                loading="lazy"
                 </model-viewer>
             </div>
+        </section>
 
 
-            </div>    
 
+          
            
 
-            <!-- environment-image="studio.hdr" -->
-            <!-- skybox-image="studio.hdr" -->
-        
     </div>
     <script src="app.js"></script>
     <script type="module"

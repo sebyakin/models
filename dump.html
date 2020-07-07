@@ -1,0 +1,27 @@
+<div class="logo">
+    <a href="http://areolamodels.com" target="_blank"><img src="./assets/am_logo.svg" alt=""></a>
+</div>
+
+
+.logo > a > img {
+    width: 10vw;
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    mix-blend-mode: exclusion;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

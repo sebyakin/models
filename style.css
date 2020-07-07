@@ -1,6 +1,21 @@
+:root {
+    --font: 'Inter var';
+    --font-size: 1.1vw;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: var(--font);
+    font-size: var(--font-size);
 }
 
 .wrapper {
@@ -14,43 +29,27 @@
 header {
     width: 100%;
     position: fixed;
+    bottom: 0;
     z-index: 3;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex: 1;
-    padding: 1vw;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
 }
 
-.header-links {
+header div {
     flex: 1;
 }
 
-
-.logo > a > img {
-    width: 10vw;
-    animation-name: rotation;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    mix-blend-mode: exclusion;
+header div:nth-child(2) {
+    text-align: center;
+    padding-bottom: 0.2vw;
 }
 
-@keyframes rotation {
-    from {
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    } to {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-    
-.name {
-    position: absolute;
-    z-index: 1;
+header div:nth-child(3) {
+    text-align: right;
 }
 
 .person {
@@ -71,19 +70,13 @@ header {
 
 .photo {
     flex: 1;
-    background-color: beige;
-    background-image:  url("./assets/photo.JPG");
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
 }
 
 .model {
     flex: 1;
-    background-color: cornflowerblue;
 }
 
 model-viewer {
@@ -94,14 +87,50 @@ model-viewer {
     background-color: unset;
 }
 
-.caption {
+.title {
     position: absolute;
+    top: 0;
     z-index: 1;
     display: flex;
     width: 100%;
-    bottom: 0;
-    flex-direction: row;
-    align-items: flex-end;    
-    padding-left: 2vw;
-    padding-bottom: 2vw;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 400;
+    font-size: 2.91vw;
+    padding-left: 0.25vw;
+    padding-right: 0.25vw;
 }
+
+.title div {
+    flex: 1
+}
+
+.title div a:hover {
+    filter: blur(2px);
+
+}
+
+.title div:nth-child(2) {
+    text-align: right;
+}
+
+.artem .photo {
+    background-image: url("./assets/artem.jpg");
+}
+
+.artem .model {
+    background: radial-gradient(100% 107.71% at 0% 51.06%, #876AAA 0%, #DEFFBE 100%);
+}
+
+.artem .title {
+    color: #DCFAC0;
+}
+
+.a-c-1 {
+    color: #DCFAC0;
+}
+
+.a-c-2 {
+    color: #8969AC;
+}
+
